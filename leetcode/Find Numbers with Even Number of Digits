@@ -1,0 +1,16 @@
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        return sum([self.wtf(n) for n in nums])
+    def wtf(self,num):
+        if 0<=num<10:
+            return 0
+        elif num<100:
+            return 1
+        elif num<1000:
+            return 0
+        elif num<10000:
+            return 1
+        elif num<100000:
+            return 0
+        else:
+            return 1
